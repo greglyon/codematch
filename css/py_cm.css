@@ -1,3 +1,11 @@
+.grid {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto;
+}
+
 .grid img {
     margin: 4px;
     transform-style: preserve-3d;
