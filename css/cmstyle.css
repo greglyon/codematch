@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+
+:root {
+    --primary-color: #000080;
+    --secondary-color: #ffff66;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Suranna', sans-serif;
+    color: #d9d9d9;
+    line-height: 1.2; /* higher number, more space between lines */
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none; /* removes underline for all links (a elements) */
+    color: #d9d9d9; /* change links' colors to gray */
+}
+
+img {
+    width: 100%;  /* keeps image within containers */
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 10px 0;  /* add top and bottom 10px margin, left and right 0 */
+}
+
+p {
+    margin: 10px 0; /* add spacing between paragraphs */
+}
+
+/* Nav Bar */
+
+.navbar {
+    background-color: var(--primary-color);
+    color: #a6a6a6;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 15px;
+    margin: 0 5px;
+    overflow: auto;
+}
+
+/* add hover state for hovering over navbar links */
+.navbar a:hover {
+    color: #ffff66;
+}
+
+.navbar .flex {
+    justify-content: space-between; /* separates nav header and items */
+}
+
+
+/* Overview  */
+.container {
+    height: 300px;
+    background-color: var(--primary-color);
+    color: #a6a6a6
+}
+
+.overview h1 {
+    font-size: 40px;
+}
+
+.overview p {
+    margin: 20px 0;
+}
+
+.overview .grid {
+    overflow: auto;
+}
+
+.overview-form {
+    position: relative;
+    top: 60px;
+    height: 250px;
+
+}
+
+
+/* Utilities (classes that we use all around website) */
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.container {
+    max-width: 1100px;  /* to make sure it doesn't stay on left side if pull browser way out to left. Make it end at 1100px */
+    margin: 0 auto; /* set to 0 on top and bottom, auto on left and right */
+    overflow: auto; /* put nav bar all the way up to top of browser */
+    padding: 0 40px; /* add 0 padding top-bottom and 40px left-right */
+}
+
+.flex {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
